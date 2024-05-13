@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:tns="http://tekup.com/products"
-           targetNamespace="http://tekup.com/products"
+           xmlns:tns="http://generated.project.soap.com/products"
+           targetNamespace="http://generated.project.soap.com/products"
            elementFormDefault="qualified">
 
     <xs:element name="product">
