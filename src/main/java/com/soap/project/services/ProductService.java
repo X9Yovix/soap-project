@@ -1,6 +1,6 @@
 package com.soap.project.services;
 
-import com.soap.project.entities.Product;
+import com.soap.project.entities.ProductEntity;
 import com.soap.project.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,20 +18,20 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public List<Product> getAllProducts() {
+    public List<ProductEntity> getAllProducts() {
         return productRepository.findAll();
     }
 
-    public Optional<Product> getProductById(int id) {
+    public Optional<ProductEntity> getProductById(int id) {
         return productRepository.findById(id);
     }
 
-    public Product createProduct(Product product) {
-        return productRepository.save(product);
+    public ProductEntity createProduct(ProductEntity productEntity) {
+        return productRepository.save(productEntity);
     }
 
-    public Product updateProduct(Product product) {
-        return productRepository.save(product);
+    public ProductEntity updateProduct(ProductEntity productEntity) {
+        return productRepository.save(productEntity);
     }
 
     public void deleteProduct(int id) {
